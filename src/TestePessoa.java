@@ -1,3 +1,7 @@
+
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -16,10 +20,11 @@ public class TestePessoa {
         
         Pessoa pessoa = new Pessoa();
         
-        pessoa.nome = "João";
-        pessoa.idade = 21;
-        pessoa.altura = 1.73;
-        pessoa.peso = 66;
-        System.out.println(pessoa);
+        pessoa.setNome("João");
+        pessoa.setIdade(21);
+        pessoa.setAltura(1.73);
+        pessoa.setPeso(66);
+        //System.out.println(pessoa.toString());
+        JOptionPane.showMessageDialog(null, pessoa.toString());
     }
 }
